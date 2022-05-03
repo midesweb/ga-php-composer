@@ -9,7 +9,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
+    
+    - name: Instalar dependencias de composer
+      uses: "ramsey/composer-install@v2"
+      with:
+        working-directory: ""
+    
     - name: Copiar el contenido del repositorio con scp
+    
       uses: appleboy/scp-action@master
       env:
         HOST: ${{ secrets.HOST }}
@@ -19,3 +26,6 @@ jobs:
       with:
         source: "*"
         target: "/var/www/html"
+        
+    
+        
