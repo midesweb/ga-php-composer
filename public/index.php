@@ -1,6 +1,8 @@
 <?php
-require '../vendor/autoload.php';
+// require '../vendor/autoload.php';
 
-use Carbon\Carbon;
+// use Carbon\Carbon;
 
-printf("Ahora es: %s", Carbon::now());
+// printf("Ahora es: %s", Carbon::now());
+
+echo php_version();
