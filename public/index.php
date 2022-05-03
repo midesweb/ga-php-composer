@@ -6,6 +6,6 @@ hola!!
 
 // printf("Ahora es: %s", Carbon::now());
 
-// echo php_version();
+echo phpversion();
 
 echo 'hola mundo!!';
