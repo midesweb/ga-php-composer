@@ -22,3 +22,5 @@ jobs:
         
     - name: Instalar dependencias de composer
       uses: php-actions/composer@v6
+      with:
+        dev: no
