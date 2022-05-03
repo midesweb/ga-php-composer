@@ -1,3 +1,4 @@
+hola!!
 <?php
 // require '../vendor/autoload.php';
 
@@ -5,4 +6,4 @@
 
 // printf("Ahora es: %s", Carbon::now());
 
-echo php_version();
+// echo php_version();
