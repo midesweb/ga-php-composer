@@ -10,10 +10,14 @@ jobs:
     steps:
     - uses: actions/checkout@master
     
-    - name: Instalar dependencias de composer
-      run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+    - name: Instalar dependencias con composer
+      uses: php-actions/composer@v6
+      with:
+        php_version: "8.0"
+        dev: no
     
     - name: Copiar el contenido del repositorio con scp
+    
       uses: appleboy/scp-action@master
       env:
         HOST: ${{ secrets.HOST }}
