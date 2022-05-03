@@ -3,4 +3,4 @@ require '../vendor/autoload.php';
 
 use Carbon\Carbon;
 
-printf("Now: %s", Carbon::now());
+printf("Ahora: %s", Carbon::now());
