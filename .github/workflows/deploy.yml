@@ -12,8 +12,6 @@ jobs:
     
     - name: Instalar dependencias de composer
       uses: "ramsey/composer-install@v2"
-      with:
-        working-directory: ""
     
     - name: Copiar el contenido del repositorio con scp
     
